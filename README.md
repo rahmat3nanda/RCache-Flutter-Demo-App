@@ -1,16 +1,10 @@
-# rcache_demo_flutter
+# RCache
 
-A new Flutter project.
+## About
+This is a DemoApp of [RCache-Flutter](https://github.com/rahmat3nanda/RCache-Flutter) implementation.
 
-## Getting Started
+## License
+RCache is released under the MIT License. See the [LICENSE](https://github.com/rahmat3nanda/RCache-Flutter-Demo-App?tab=MIT-1-ov-file) file for details.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Contact
+For any questions or feedback, feel free to reach out to [rahmat3nanda@gmail.com](mailto:rahmat3nanda@gmail.com) or [My LinkedIn](https://www.linkedin.com/in/rahmat-trinanda/).
