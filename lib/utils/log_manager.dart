@@ -61,7 +61,7 @@ class LogManager {
 
   LogManager._internal();
 
-  static LogManager get shared => _manager ??= LogManager._internal();
+  static LogManager get instance => _manager ??= LogManager._internal();
 
   List<LogModel> _localData = [];
 
