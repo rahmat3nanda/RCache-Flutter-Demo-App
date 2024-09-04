@@ -1,0 +1,29 @@
+PODS:
+  - Flutter (1.0.0)
+  - RCache (1.0.3)
+  - rcache_flutter (1.0.0):
+    - Flutter
+    - RCache (= 1.0.3)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - rcache_flutter (from `.symlinks/plugins/rcache_flutter/ios`)
+
+SPEC REPOS:
+  trunk:
+    - RCache
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  rcache_flutter:
+    :path: ".symlinks/plugins/rcache_flutter/ios"
+
+SPEC CHECKSUMS:
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  RCache: 6d571a1f79da60af9ee6104dc6eff2f2fc5330f2
+  rcache_flutter: acc2cfb06e3281aed9af63e51c62d0e6bcf40174
+
+PODFILE CHECKSUM: 819463e6a0290f5a72f145ba7cde16e8b6ef0796
+
+COCOAPODS: 1.15.2

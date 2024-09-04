@@ -1,0 +1,29 @@
+PODS:
+  - FlutterMacOS (1.0.0)
+  - RCache (1.0.3)
+  - rcache_flutter (1.0.0):
+    - FlutterMacOS
+    - RCache (= 1.0.3)
+
+DEPENDENCIES:
+  - FlutterMacOS (from `Flutter/ephemeral`)
+  - rcache_flutter (from `Flutter/ephemeral/.symlinks/plugins/rcache_flutter/macos`)
+
+SPEC REPOS:
+  trunk:
+    - RCache
+
+EXTERNAL SOURCES:
+  FlutterMacOS:
+    :path: Flutter/ephemeral
+  rcache_flutter:
+    :path: Flutter/ephemeral/.symlinks/plugins/rcache_flutter/macos
+
+SPEC CHECKSUMS:
+  FlutterMacOS: 8f6f14fa908a6fb3fba0cd85dbd81ec4b251fb24
+  RCache: 6d571a1f79da60af9ee6104dc6eff2f2fc5330f2
+  rcache_flutter: 7304c5be635c8080dc9074e6d2a7620735983efc
+
+PODFILE CHECKSUM: 236401fc2c932af29a9fcf0e97baeeb2d750d367
+
+COCOAPODS: 1.15.2
