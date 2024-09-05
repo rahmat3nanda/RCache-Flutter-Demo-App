@@ -81,5 +81,7 @@ class LogManager {
   }) async {
     String time = DateFormat("d-M-yyyy HH:mm:ss").format(DateTime.now());
     _localData.add(LogModel(action: action.value, value: value, time: time));
+    List<dynamic> json = List<dynamic>.from(_localData.map((x) => x.toJson()));
+    await RCache.common.saveString(jsonEncode(json), key: AppRCacheKey.logs);
   }
 }
