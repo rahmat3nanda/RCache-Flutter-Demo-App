@@ -3,6 +3,7 @@ import 'package:rcache_demo_flutter/app_rcache_key.dart';
 import 'package:rcache_demo_flutter/bloc/key/key_event.dart';
 import 'package:rcache_demo_flutter/bloc/key/key_state.dart';
 import 'package:rcache_demo_flutter/model/key_model.dart';
+import 'package:rcache_demo_flutter/model/log_model.dart';
 import 'package:rcache_demo_flutter/utils/log_manager.dart';
 import 'package:rcache_flutter/rcache.dart';
 
