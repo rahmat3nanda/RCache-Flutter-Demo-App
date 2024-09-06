@@ -220,10 +220,10 @@ packages:
     dependency: "direct main"
     description:
       name: rcache_flutter
-      sha256: "739ab03e55ebe47995c74d1dbc02ed40637357f364ebdf4afc53f96de83dfdfa"
+      sha256: "7a5d04165b0f1f8dadfb9e923479aa2b0fefe5d92d80338b6340795c73c5c655"
       url: "https://pub.dev"
     source: hosted
-    version: "1.1.0"
+    version: "1.1.1"
   sky_engine:
     dependency: transitive
     description: flutter
