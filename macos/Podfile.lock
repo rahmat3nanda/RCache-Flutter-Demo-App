@@ -1,9 +1,9 @@
 PODS:
   - FlutterMacOS (1.0.0)
-  - RCache (1.0.3)
+  - RCache (1.0.4)
   - rcache_flutter (1.0.0):
     - FlutterMacOS
-    - RCache (= 1.0.3)
+    - RCache (= 1.0.4)
 
 DEPENDENCIES:
   - FlutterMacOS (from `Flutter/ephemeral`)

@@ -3,10 +3,10 @@ PODS:
   - fluttertoast (0.0.2):
     - Flutter
     - Toast
-  - RCache (1.0.3)
+  - RCache (1.0.4)
   - rcache_flutter (1.0.0):
     - Flutter
-    - RCache (= 1.0.3)
+    - RCache (= 1.0.4)
   - Toast (4.1.1)
 
 DEPENDENCIES:
