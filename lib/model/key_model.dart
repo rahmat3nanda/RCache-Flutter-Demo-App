@@ -8,4 +8,10 @@ class KeyModel {
   RCacheKey get rCache {
     return RCacheKey(name);
   }
+
+  @override
+  bool operator ==(Object other) => other is KeyModel && other.name == name;
+
+  @override
+  int get hashCode => name.hashCode;
 }
