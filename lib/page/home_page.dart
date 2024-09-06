@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:rcache_demo_flutter/model/log_model.dart';
 import 'package:rcache_demo_flutter/page/key_page.dart';
+import 'package:rcache_demo_flutter/page/save_page.dart';
 import 'package:rcache_demo_flutter/utils/log_manager.dart';
 import 'package:rcache_demo_flutter/utils/router.dart';
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
@@ -85,7 +87,7 @@ class _HomePageState extends State<HomePage> {
           label: "Key",
         ),
         SpeedDialChild(
-          onTap: () {},
+          onTap: () => _route(const SavePage()),
           shape: const CircleBorder(),
           child: const Icon(Icons.input),
           label: "Save",
