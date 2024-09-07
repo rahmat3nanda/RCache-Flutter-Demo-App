@@ -1,15 +1,15 @@
-enum StorageType {
+enum ClearType {
   common,
   credentials,
   all;
 
   String get value {
     switch (this) {
-      case StorageType.common:
+      case ClearType.common:
         return "All General Data";
-      case StorageType.credentials:
+      case ClearType.credentials:
         return "All Credentials Data";
-      case StorageType.all:
+      case ClearType.all:
         return "All Data";
     }
   }
