@@ -1,28 +1,25 @@
 import 'package:equatable/equatable.dart';
-import 'package:rcache_demo_flutter/model/data_type.dart';
 import 'package:rcache_demo_flutter/model/key_model.dart';
 import 'package:rcache_demo_flutter/model/storage_type.dart';
 
-abstract class ReadEvent extends Equatable {
-  const ReadEvent();
+abstract class RemoveEvent extends Equatable {
+  const RemoveEvent();
 
   @override
   List<Object> get props => [];
 }
 
-class ReadDataEvent extends ReadEvent {
-  final DataType dataType;
+class RemoveDataEvent extends RemoveEvent {
   final KeyModel key;
   final StorageType storageType;
 
-  const ReadDataEvent({
-    required this.dataType,
+  const RemoveDataEvent({
     required this.key,
     required this.storageType,
   });
 
   @override
   String toString() {
-    return 'ReadDataEvent{dataType: $dataType, key: $key, storageType: $storageType}';
+    return 'RemoveDataEvent{key: $key, storageType: $storageType}';
   }
 }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:rcache_demo_flutter/bloc/key/key_bloc.dart';
 import 'package:rcache_demo_flutter/bloc/read/read_bloc.dart';
+import 'package:rcache_demo_flutter/bloc/remove/remove_bloc.dart';
 import 'package:rcache_demo_flutter/bloc/save/save_bloc.dart';
 import 'package:rcache_demo_flutter/page/home_page.dart';
 
@@ -18,6 +19,9 @@ class App extends StatelessWidget {
         ),
         BlocProvider<ReadBloc>(
           create: (BuildContext context) => ReadBloc(ReadInitialState()),
+        ),
+        BlocProvider<RemoveBloc>(
+          create: (BuildContext context) => RemoveBloc(RemoveInitialState()),
         ),
         BlocProvider<SaveBloc>(
           create: (BuildContext context) => SaveBloc(SaveInitialState()),
