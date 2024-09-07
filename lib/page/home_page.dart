@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rcache_demo_flutter/model/log_model.dart';
+import 'package:rcache_demo_flutter/page/clear_page.dart';
 import 'package:rcache_demo_flutter/page/key_page.dart';
 import 'package:rcache_demo_flutter/page/read_page.dart';
 import 'package:rcache_demo_flutter/page/remove_page.dart';
@@ -107,7 +108,7 @@ class _HomePageState extends State<HomePage> {
           label: "Remove",
         ),
         SpeedDialChild(
-          onTap: () {},
+          onTap: () => _route(const ClearPage()),
           shape: const CircleBorder(),
           child: const Icon(Icons.clear),
           label: "Clear",

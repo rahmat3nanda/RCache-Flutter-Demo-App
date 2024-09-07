@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:rcache_demo_flutter/bloc/clear/clear_bloc.dart';
 import 'package:rcache_demo_flutter/bloc/key/key_bloc.dart';
 import 'package:rcache_demo_flutter/bloc/read/read_bloc.dart';
 import 'package:rcache_demo_flutter/bloc/remove/remove_bloc.dart';
@@ -14,6 +15,9 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
+        BlocProvider<ClearBloc>(
+          create: (BuildContext context) => ClearBloc(ClearInitialState()),
+        ),
         BlocProvider<KeyBloc>(
           create: (BuildContext context) => KeyBloc(KeyInitialState()),
         ),
