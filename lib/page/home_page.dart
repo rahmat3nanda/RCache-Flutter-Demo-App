@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:rcache_demo_flutter/model/log_model.dart';
 import 'package:rcache_demo_flutter/page/key_page.dart';
 import 'package:rcache_demo_flutter/page/read_page.dart';
+import 'package:rcache_demo_flutter/page/remove_page.dart';
 import 'package:rcache_demo_flutter/page/save_page.dart';
 import 'package:rcache_demo_flutter/utils/log_manager.dart';
 import 'package:rcache_demo_flutter/utils/router.dart';
@@ -100,7 +101,7 @@ class _HomePageState extends State<HomePage> {
           label: "Read",
         ),
         SpeedDialChild(
-          onTap: () {},
+          onTap: () => _route(const RemovePage()),
           shape: const CircleBorder(),
           child: const Icon(Icons.remove),
           label: "Remove",
