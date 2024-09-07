@@ -46,18 +46,19 @@ class _FormHeaderWidgetState extends State<FormHeaderWidget> {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        _item(
-          selected: widget.dataType,
-          title: "Data Type:",
-          hint: "Select Data Type",
-          sources: widget.sourceDataType,
-          label: (i) => i.value,
-          onChanged: (i) {
-            if (widget.dataTypeChanged != null) {
-              widget.dataTypeChanged!(i);
-            }
-          },
-        ),
+        if (widget.showDataType)
+          _item(
+            selected: widget.dataType,
+            title: "Data Type:",
+            hint: "Select Data Type",
+            sources: widget.sourceDataType,
+            label: (i) => i.value,
+            onChanged: (i) {
+              if (widget.dataTypeChanged != null) {
+                widget.dataTypeChanged!(i);
+              }
+            },
+          ),
         _item(
           selected: widget.keyModel,
           title: "Key:",
