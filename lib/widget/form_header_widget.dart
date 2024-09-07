@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:rcache_demo_flutter/model/data_type.dart';
 import 'package:rcache_demo_flutter/model/key_model.dart';
 import 'package:rcache_demo_flutter/model/storage_type.dart';
+import 'package:rcache_demo_flutter/widget/dropdown_title_widget.dart';
 
 class FormHeaderWidget extends StatefulWidget {
   final DataType? dataType;
@@ -47,7 +48,7 @@ class _FormHeaderWidgetState extends State<FormHeaderWidget> {
       mainAxisSize: MainAxisSize.min,
       children: [
         if (widget.showDataType)
-          _item(
+          DropdownTitleWidget(
             selected: widget.dataType,
             title: "Data Type:",
             hint: "Select Data Type",
@@ -59,7 +60,7 @@ class _FormHeaderWidgetState extends State<FormHeaderWidget> {
               }
             },
           ),
-        _item(
+        DropdownTitleWidget(
           selected: widget.keyModel,
           title: "Key:",
           hint: "Select Key",
@@ -77,7 +78,7 @@ class _FormHeaderWidgetState extends State<FormHeaderWidget> {
                   icon: const Icon(Icons.add),
                 ),
         ),
-        _item(
+        DropdownTitleWidget(
           selected: widget.storageType,
           title: "Storage Type:",
           hint: "Select Storage Type",
@@ -89,35 +90,6 @@ class _FormHeaderWidgetState extends State<FormHeaderWidget> {
             }
           },
         ),
-      ],
-    );
-  }
-
-  Widget _item<T>({
-    required T? selected,
-    required String title,
-    required String hint,
-    required List<T> sources,
-    required String Function(T) label,
-    required Function(T?) onChanged,
-    Widget? suffix,
-  }) {
-    return Row(
-      children: [
-        Text(title),
-        Expanded(child: Container()),
-        DropdownButton<T>(
-          value: selected,
-          hint: Text(hint),
-          onChanged: onChanged,
-          items: sources.map<DropdownMenuItem<T>>((T value) {
-            return DropdownMenuItem(
-              value: value,
-              child: Text(label(value)),
-            );
-          }).toList(),
-        ),
-        if (suffix != null) suffix,
       ],
     );
   }
